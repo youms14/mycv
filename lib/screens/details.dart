@@ -87,7 +87,7 @@ class Details extends StatelessWidget{
                          child: Column(
                              mainAxisAlignment:MainAxisAlignment.center ,
                              children: [
-                               Text("2021: Enseignant vacataire à UY1",
+                               Text("2021: Déeloppement",
                                  textAlign: TextAlign.left,
                                  style: TextStyle(
                                      fontSize: 22,
