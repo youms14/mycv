@@ -3,14 +3,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'details.dart';
+import 'navDrawer.dart';
 
 class VisitCard extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: NavDrawer(),
       backgroundColor: Color(0xff052575),
       appBar: AppBar(
-        title: Text('Mon CV'),
+
+        title: Text('My Professionnal App'),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -66,15 +69,14 @@ class VisitCard extends StatelessWidget{
                         SizedBox(height: 20.0,),
                       ElevatedButton(
 
-                          onPressed: (){
+                        onPressed: (){
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(builder: (BuildContext context){
                                   return Details();
                                 })
                             );
-                          },
-                        //style: ButtonStyle(backgroundColor:  (5),),
+                          }, //style: ButtonStyle(backgroundColor:  (5),),
                         style: ElevatedButton.styleFrom(
                           primary: Colors.white,
                           //onPrimary: Colors.white,

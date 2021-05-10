@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ma Carte de Visite',
+      title: 'My Professionnal App',
       home: VisitCard(),
     );
   }
