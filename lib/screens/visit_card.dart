@@ -46,10 +46,20 @@ class VisitCard extends StatelessWidget{
                           color: Colors.white,
                           elevation: 0.5,
                           child:Padding(
-                            padding: EdgeInsets.all(5.0),
-                            child: Text('Tel: 699986014. email: arlegilyoums@gmail.com',textAlign: TextAlign.center, style: TextStyle(fontFamily: 'JosefinSans',
-                              fontSize: 15.0,color: Color(0xff052575),fontWeight: FontWeight.bold)
-                            ),
+                            padding: EdgeInsets.all(8.0),
+                            child:Row(
+                              children: [
+                                Icon(Icons.contact_phone,color: Color(0xff052575),size: 25,),
+                                Text(' 699986014    ',textAlign: TextAlign.center, style: TextStyle(fontFamily: 'JosefinSans',
+                                    fontSize: 15.0,color: Color(0xff052575),fontWeight: FontWeight.w400)
+                                ),
+                                Icon(Icons.contact_mail,color: Color(0xff052575),size: 25,),
+                                Text(' arlegilyoums@gmail.com  ',textAlign: TextAlign.center, style: TextStyle(fontFamily: 'JosefinSans',
+                                    fontSize: 15.0,color: Color(0xff052575),fontWeight: FontWeight.w400)
+                                ),
+                              ],
+                            )
+
 
                           )
 
@@ -61,7 +71,7 @@ class VisitCard extends StatelessWidget{
                           margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
                           child: Padding(
                               padding: EdgeInsets.all(15.0),
-                              child:Text('Founder of YOUMS\'SOFT SARL, développeur FullStack web(SPRING/REACT) et mobile(FLUTTER) Entrepreneur, Homme d\'Affaire et passionné par l\'Informatique Quantique.',
+                              child:Text('CEO of YOUMS\'SOFT SARL, développeur FullStack web(SPRING/REACT) et mobile(FLUTTER) Entrepreneur, Homme d\'Affaire et passionné par l\'Informatique Quantique.',
                                   style: TextStyle(fontFamily: 'JosefinSans',fontSize: 14.0,height: 1.5,color: Colors.white,),textAlign: TextAlign.center,
                           )
                         ),
